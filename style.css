@@ -146,8 +146,8 @@ h6 {
     right: 100px;
 }
 
-@media(max-width:768px){
-    .popup{
+@media(max-width:768px) {
+    .popup {
         right: 20px;
     }
 }
@@ -182,7 +182,10 @@ h6 {
 
 .content::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: linear-gradient(180deg, #00c6fb, #005bea);
+    background-color: #356184;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%,
+            color-stop(.5, rgba(255, 255, 255, .25)),
+            color-stop(.5, transparent), to(transparent));
 }
 
 .popup-content {
@@ -190,23 +193,27 @@ h6 {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
-@media(max-width:480px){
+
+@media(max-width:480px) {
     .popup-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
     }
+
     .menu-item {
         padding: 5px;
         margin: 5px;
         font-weight: 600;
     }
+
     .header-navigation {
         padding: 5px;
         margin: 10px;
-    
+
     }
-    .content{
+
+    .content {
         padding: 20px;
     }
 }
@@ -227,7 +234,7 @@ h6 {
 }
 
 .content-item:focus {
-    border: #120fd98e solid 1px;
+    border: #35618480 solid 1px;
     border-radius: 5px;
     margin: 0px;
 }
@@ -236,7 +243,6 @@ h6 {
     width: 70px;
     margin: 15px;
 }
-
 
 .popup-checkbox:checked+.popup {
     opacity: 1;
@@ -263,11 +269,12 @@ h6 {
     width: 100%;
     color: #fff;
     text-align: center;
-    background: linear-gradient(180deg, #00c6fb, #032f75);
+    background: #356184;
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
     padding: 15px;
     border-radius: 10px;
-    margin: 25px 0px 10px 0px;
+    margin-top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    opacity: 80%;
+    opacity: 60%;
 }
